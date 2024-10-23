@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+//function delcaration
+void printMenu();
+
+int main() {
+	//function call
+	printMenu();
+}
+
+	//function definition
+void printMenu() {
+	cout << "Press q Quit" << endl;
+	cout << "Press i to view inventory" << endl;
+	cout << "Press s to read the background story" << endl;
+	cout << "Press c for credits" << endl;
+}
