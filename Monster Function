@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+void MonsterGen(); //function declaration
+
+int main() {
+
+	//your game should be here
+	srand(time(NULL)); //seeds rand()
+	MonsterGen();
+	MonsterGen();
+	MonsterGen();
+	MonsterGen();
+
+}
+
+
+void MonsterGen() {
+	int num = rand() % 100; //random num between 0-99
+	if (num < 20)
+		cout << "a werewolf" << endl;
+	else if (num < 40) //20% chance!
+		cout << "a  vampire!" << endl;
+	else if (num < 70) //30% chance!
+		cout << "a ghost appears!" << endl;
+	else if (num < 90) //20% chance!
+		cout << "a zombie appears!" << endl;
+	else
+		cout << "a spider appears!" << endl;
+}
