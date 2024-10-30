@@ -1,0 +1,52 @@
+#include<iostream>
+using namespace std;
+
+//declaration/prototype
+void drawBox();
+void printName(string name);
+void drawLine(int L);
+int hoursToSeconds(int hours);
+int findMax(int x, int d, int g);
+
+int main() {
+	drawBox(); //call
+	printName("gio");
+	drawLine(70);
+	cout << hoursToSeconds(5);
+	cout << findMax(3,4,5);
+}
+
+//definitions
+void drawBox() {
+	for (int i = 0; i < 5; i++) {
+		for (int j = 0; j < 5; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}		
+}
+
+
+void printName(string name) {
+	cout << "hello," << name << endl;
+}
+
+void drawLine(int L) {
+	for (int i = 0; i < L; i++)
+		cout << "-";
+
+}
+
+int hoursToSeconds(int hours){
+	return hours * 60 * 60;
+}
+
+int findMax(int x, int d, int g) {
+	if (x > d && x > g)
+		return x;
+	if (d > x && d > g)
+		return d;
+	if (g > x && g > d)
+		return g;
+
+}
