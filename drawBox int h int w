@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+//declaration/prototype
+void drawBox(int w, int h);
+void printName(string name);
+
+int main() {
+	drawBox(4,8); //call
+	printName("gio");
+	drawBox(8,4);
+}
+
+//definitions
+void drawBox(int w, int h) {
+	for (int i = 0; i < h; i++) {
+		for (int j = 0; j < w; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}		
+}
+
+
+void printName(string name) {
+	cout << "hello," << name << endl;
+	
+
+
+}
