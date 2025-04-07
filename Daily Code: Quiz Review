@@ -1,17 +1,20 @@
 #include<iostream>
 using namespace std;
 
-void MiniCalc(char one, char two);
+void MiniCalc(int one, int two);
 
 int main() {
-	char L1, L2;
-	cout << "enter two letters : " << endl;
+	int L1, L2;
+	cout << "enter two numbers : " << endl;
 	cin >> L1;
 	cin >> L2;
 	MiniCalc(L1, L2);
 }
 
-void Minicalc(char one, char two) {
-	cout << one << two << endl;
+void MiniCalc(int one, int two) {
+	cout << "added:" << one + two << endl;
+	cout << "subtracted:" << one - two << endl;
+	cout << "divided:" << one / two << endl;
+	cout << "multiplied:" << one * two << endl;
 
 }
