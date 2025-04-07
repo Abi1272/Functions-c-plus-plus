@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+void MiniCalc(char one, char two);
+
+int main() {
+	char L1, L2;
+	cout << "enter two letters : " << endl;
+	cin >> L1;
+	cin >> L2;
+	MiniCalc(L1, L2);
+}
+
+void Minicalc(char one, char two) {
+	cout << one << two << endl;
+
+}
